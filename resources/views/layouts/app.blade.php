@@ -95,7 +95,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Register Service Worker -->
     <script>
-          if ('serviceWorker' in navigator ) {
+    if ('serviceWorker' in navigator ) {
             window.addEventListener('load', function() {
                 navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
                     // Registration was successful
@@ -105,7 +105,7 @@
                     console.log('ServiceWorker registration failed: ', err);
                 });
             });
-        }
+    }
     </script>
 </body>
 </html>

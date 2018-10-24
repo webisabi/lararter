@@ -1,6 +1,6 @@
 {
-  "short_name": "WSADev",
-  "name": "WS Art Dev - Laravelopment",
+  "short_name": "WSArt",
+  "name": "Will Sabido Art",
   "theme_color": "#fff",
   "background_color": "#fff",
   "display": "standalone",
@@ -16,7 +16,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "https://will.sabido.art/",
   "orientation": "portrait"
 }
 

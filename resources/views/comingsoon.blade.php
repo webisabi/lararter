@@ -12,8 +12,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Will Sabido Art</title>
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <script>
+            window.Laravel = { csrfToken: '{{ csrf_token() }}' }
+        </script>
+        <title>{{ config('app.name', 'Will Sabido Art') }}</title>
         <meta name="Description" content="Bristol landscapes in oil on canvas.">
+        <link rel="manifest" href="/manifest.json">
         <!-- favicons & OG meta, thanks to https://realfavicongenerator.net -->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -176,21 +182,12 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height container">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
+        <div id="app" class="flex-center position-ref full-height container">
             <main>
                 <div class="content">
                     <div class="title m-b-md">
-                        <h1>Will Sabido Art</h1>
+                        <h1>Bristol Landscapes</h1>
+                        <h2>by Will Sabido</h2>
                     </div>
 
                     <div class="sub-title">
@@ -217,6 +214,22 @@
                 <p class="web-dev">WebDev | <a href="//webisabihosting.co.uk" title="Web Development by WebiSabi" target="_blank" rel="noreferrer">WebiSabi</a></p>
             </div>
         </footer>
+        <!-- Scripts -->
+        <script src="{{ asset('js/app.js') }}" defer></script>
+        <!-- Check for Service Worker -->
+        <script>
+        if ('serviceWorker' in navigator ) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+        </script>
         <!-- Bootstrap JQuery -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

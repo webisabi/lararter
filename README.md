@@ -3,7 +3,8 @@
 ## A PWA (Progressive Web App) for artwork - built on Laravel with Voyager admin.
 
 ### Features:
- - Admin area for management of artwork and projects
+ - Voyager admin area for management of artwork and projects
+ - Service Worker registered and PWA functionality ready to be enabled with addition of required paths for caching
  
 ### Features (to be built):
  - Frontend gallery
