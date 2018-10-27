@@ -91,6 +91,10 @@
 
     </div>
 
+    <!-- Include Cookie Consent -->
+    @include('cookieConsent::index')
+
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Register Service Worker -->
