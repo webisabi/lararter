@@ -1,0 +1,256 @@
+/* TYPOGRAPHY */
+
+@font-face {
+  font-family: 'Raleway';
+  font-display: fallback;
+  font-face: 500;
+  src: local("Raleway"), url("https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwPIsWqZPANqczVs.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-display: auto;
+  font-face: bold;
+  src: local("Raleway"), url("https://fonts.gstatic.com/s/raleway/v12/1Ptsg8zYS_SKggPNwE44TYFqL_KWxQ.woff2") format("woff2");
+}
+
+/* NAVIGATION */
+
+.navbar-nav li {
+  list-style: none;
+  float: inherit;
+  margin: 4px;
+  padding: 4px 0px;
+}
+
+.navbar-nav li a,
+button {
+  background: none;
+  padding: 4px 10px;
+  color: white;
+  font-weight: 600;
+  background: darkcyan;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+.navbar-nav li a:hover,
+button:hover {
+  background: darkslategrey;
+  text-decoration: none;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+/* MAIN */
+
+html,
+body {
+  background-color: #fff;
+  background-size: cover;
+  color: #636b6f;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  height: 100vh;
+  margin: 0;
+}
+
+h1,
+h2 {
+  color: aliceblue;
+  text-shadow: 1px 1px 1px black;
+  font-weight: 900;
+  text-align: -webkit-center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.flex-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.content {
+  text-align: center;
+}
+
+.title,
+.title h1 {
+  font-size: 84px;
+}
+
+.title,
+.sub-title {
+  -webkit-animation: colorchange 30s infinite alternate;
+  text-shadow: 0px -1px 2px rgba(255, 255, 255, 0.4), 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.sub-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.links > a {
+  color: whitesmoke;
+  padding: 0 25px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-grid;
+  padding: 8px;
+  margin: 24px;
+}
+
+.links > a:hover {
+  color: white;
+  background: cornflowerblue;
+}
+
+.m-b-md {
+  margin-bottom: 30px;
+}
+
+.credits {
+  font-size: smaller;
+  color: antiquewhite;
+}
+
+.credits a {
+  color: whitesmoke;
+}
+
+.credits a:hover {
+  color: white;
+  text-decoration: none;
+  background: cornflowerblue;
+}
+
+.credits .web-dev {
+  float: right;
+}
+
+.credits .copyright {
+  float: left;
+}
+
+/* CONTACT FORM */
+
+.contact-form {
+  margin: auto;
+  width: 50%;
+}
+
+.contact-form label,
+.contact-form .form-check-label {
+  background: #ffffff9e;
+  margin: 0 0 -1px 5px;
+  color: black;
+  font-weight: 600;
+  padding: 2px 20px;
+}
+
+.contact-form #newsletter-subscription {
+  height: auto;
+}
+
+.contact-form .form-check {
+  margin-bottom: 20px;
+}
+
+.contact-form .send-button {
+  width: 100px;
+  margin: auto;
+}
+
+.contact-form .contact-send {
+  padding: 10px 30px;
+}
+
+/* ANIMATIONS */
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: #720800;
+  }
+
+  10% {
+    color: #8e44ad;
+  }
+
+  20% {
+    color: #1abc9c;
+  }
+
+  30% {
+    color: #d35400;
+  }
+
+  40% {
+    color: #f5dd00;
+  }
+
+  50% {
+    color: #34495e;
+  }
+
+  60% {
+    color: #508c70;
+  }
+
+  70% {
+    color: #2980b9;
+  }
+
+  80% {
+    color: #f1c40f;
+  }
+
+  90% {
+    color: white;
+  }
+
+  100% {
+    color: pink;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .title,
+  .title h1 {
+    font-size: 34px;
+  }
+
+  .sub-title {
+    font-size: 20px;
+  }
+
+  .credits .web-dev,
+  .credits .copyright {
+    float: none;
+    text-align: center;
+  }
+}
+

@@ -53,7 +53,8 @@ return [
             'prefix_indexes' => true,
             'strict' => true,
             //'engine' => null,
-            'engine' => 'InnoDB ROW_FORMAT=DYNAMIC',
+            // Change default to InnoDB to avoid MySQL8 db socket error
+            'engine' => env('DB_ENGINE', 'InnoDB ROW_FORMAT=DYNAMIC'),
         ],
 
         'pgsql' => [
