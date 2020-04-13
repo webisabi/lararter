@@ -121,6 +121,10 @@
 
     </div>
 
+    <div class="footer-menu info-menu">
+        {{ menu('Info') }}
+    </div>
+
     <!-- Include Cookie Consent -->
     @include('cookieConsent::index')
 

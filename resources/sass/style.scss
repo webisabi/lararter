@@ -13,7 +13,6 @@
 }
 
 /* NAVIGATION */
-
 .navbar-nav li {
     list-style: none;
     float: inherit;
@@ -35,6 +34,25 @@
     color: aliceblue;
     cursor: pointer;
 }
+
+/* Footer menu */
+.footer-menu li {
+    float: left;
+    list-style: none;
+    background: #222;
+    background: #00000054;
+    margin: 0 2px;
+    padding: 0 8px;
+}
+.footer-menu li a {
+    color: whitesmoke;
+}
+.footer-menu a:hover {
+    background: #000;
+    color: white;
+    text-decoration:none;
+}
+
 /* MAIN */
 
 html, body {
@@ -125,7 +143,7 @@ h1, h2 {
 /* CONTACT FORM */
 .contact-form {
 
-    margin: auto;
+    margin: 10% auto;
     width: 50%;
 
     label, .form-check-label {
