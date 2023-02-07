@@ -160,9 +160,12 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+
         /*
          * Package Service Providers...
          */
+        // Payum Service Provider (when ready)
+        //'Payum\LaravelPackage\PayumServiceProvider',
 
         /*
          * Application Service Providers...

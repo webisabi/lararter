@@ -15,6 +15,18 @@ Route::get('/', function () {
     return view('comingsoon');
 });
 
+Route::get('/app-layout', function () {
+    return view('layouts.app');
+});
+
+Route::get('/gallery', function () {
+    return view('gallery');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
 
 Route::group(['prefix' => 'ezel'], function () {
     Voyager::routes();
