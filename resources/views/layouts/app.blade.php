@@ -126,7 +126,7 @@
     </div>
 
     <!-- Include Cookie Consent -->
-    @include('cookieConsent::index')
+    @include('cookie-consent::index')
 
 
     <!-- Scripts -->

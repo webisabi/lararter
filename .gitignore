@@ -1,6 +1,7 @@
+.DS_STORE
 /node_modules
-/public/hot
-/public/storage
+/public_html/hot
+/public_html/storage
 /storage/*.key
 /vendor
 /.idea
@@ -12,4 +13,4 @@ npm-debug.log
 yarn-error.log
 .env
 .phpunit.result.cache
-/public
+/public_html

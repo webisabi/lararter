@@ -8,19 +8,17 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": "^7.2.5",
-        "fideloper/proxy": "^4.0",
-        "guzzlehttp/guzzle": "^6.3",
-        "laravel/framework": "^7.0",
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.5",
+        "laravel/framework": "^9.0",
         "laravel/tinker": "^2.4",
-        "laravel/ui": "^2.0",
-        "php-http/guzzle6-adapter": "^1.1",
-        "spatie/laravel-activitylog": "^3.1",
-        "spatie/laravel-cookie-consent": "^2.4",
-        "spatie/laravel-failed-job-monitor": "^3.0",
+        "laravel/ui": "^3.0",
+        "spatie/laravel-activitylog": "^4.1",
+        "spatie/laravel-cookie-consent": "^3.2",
+        "spatie/laravel-ignition": "^1.0",
         "spatie/laravel-newsletter": "^4.2",
-        "spatie/laravel-sitemap": "^5.2",
-        "spatie/laravel-tags": "^2.1",
+        "spatie/laravel-sitemap": "^6.2",
+        "spatie/laravel-tags": "^4.0",
         "tcg/voyager": "^1.1"
     },
     "require-dev": {
@@ -28,10 +26,10 @@
         "beyondcode/laravel-dump-server": "^1.0",
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
-        "laravel/dusk": "^5.0.0",
+        "laravel/dusk": "^7.0.0",
         "mockery/mockery": "^1.0",
-        "nunomaduro/collision": "^4.1",
-        "phpunit/phpunit": "^8.5"
+        "nunomaduro/collision": "^6.1",
+        "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "classmap": [

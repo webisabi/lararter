@@ -10,3 +10,9 @@
  - Frontend gallery
  - Frontend feature to enable print orders for gallery/artwork items
  - Admin management for the above features
+
+### Bugs (to fix!):
+ - Sort the seeders/seeds issue introduced w/ laravel upgrade
+
+### ...or not to fix?:
+ - wtf is with the extra icon in the laravel debug bar? Maybe appeared after update of node_modules...?

@@ -23,6 +23,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // change public folder for kualo server conf.
+//        $this->app->bind('path.public', function() {
+//            return realpath(base_path().'/../public_html');
+//        });
+        $this->app->bind('path.public', function() {
+            return base_path().'/public_html';
+        });
     }
 }

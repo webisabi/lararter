@@ -195,9 +195,9 @@
                     </div>
 
                     <div class="links" role="navigation">
-                        <a href="{{ url('//www.redbubble.com/people/WillSabido/shop') }}" target="_blank" rel="noreferrer"><i class="fas fa-images"></i>Buy Prints & Paraphernalia from RedBubble</a>
-                        <a href="{{ url('//www.instagram.com/willsabido/') }}" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i>Instagram</a>
-                        <a href="{{ url('//twitter.com/WillSabido') }}" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i>Twitterings</a>
+                        <a href="{{ url('//www.redbubble.com/people/WillSabido/shop') }}" target="_blank" rel="noreferrer" class="funky-border"><i class="fas fa-images"></i>Buy Prints & Paraphernalia from RedBubble</a>
+                        <a href="{{ url('//www.instagram.com/willsabido/') }}" target="_blank" rel="noreferrer" class="funky-border"><i class="fab fa-instagram"></i>Instagram</a>
+                        <a href="{{ url('//twitter.com/WillSabido') }}" target="_blank" rel="noreferrer" class="funky-border"><i class="fab fa-twitter"></i>Twitterings</a>
                     </div>
 
                     <div class="links" style="display:none;">

@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use TCG\Voyager\Models\Setting;
 
@@ -74,7 +76,7 @@ class SettingsTableSeeder extends Seeder
         if (!$setting->exists) {
             $setting->fill([
                 'display_name' => __('voyager::seeders.settings.admin.title'),
-                'value'        => 'Ezel',
+                'value'        => 'Voyager',
                 'details'      => '',
                 'type'         => 'text',
                 'order'        => 1,
